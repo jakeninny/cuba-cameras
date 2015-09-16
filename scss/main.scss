@@ -1,0 +1,102 @@
+$bg-color: #000;
+
+body {
+  background-color: $bg-color;
+  background-image: url(images/bg-black-zeros.png);
+  color: #fff;
+  font: 16px/1.4 sans-serif;
+}
+
+#container {
+  margin: 0 auto;
+  width: 1000px;
+  background-color: white;
+  color: #000;
+
+
+}
+
+#header {
+  background-color: #222;
+  color: #fff;
+  font-size: 1em;
+  h1 {
+    width: 200px;
+    background-color: #035aaa;
+    margin: 0;
+    text-align: center;
+    float: left;
+    font-size: 1em;
+  }
+  a {
+    display: block;
+    height: 70px;
+    box-sizing: border-box;
+    padding: 0 10px;
+    padding-top: 1.6em;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
+
+.nav {
+  list-style: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+  li, a {
+    display: inline-block;
+  }
+}
+
+#header .nav a {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.nav a:hover {
+  background-color: #035aaa;
+}
+
+#main {
+  padding: 0 20px;
+}
+
+#footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.col-row {
+  margin: 0 -10px;
+}
+
+.col-half, .col-third {
+  box-sizing: border-box;
+  /* border: 1px solid #f09; */
+  float: left;
+  margin: 0 10px;
+}
+
+.col-half {
+  width: 470px;
+}
+
+.col-third {
+  width: 306.6666px;
+}
+
+.clearfix {
+  &:before {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+}
